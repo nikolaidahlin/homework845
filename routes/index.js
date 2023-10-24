@@ -24,10 +24,7 @@ router.get("/sum/:number1/:number2", (req, res) => {
 
 
 router.get("/hello", (req, res) => {
-  const result = "Hello World"
-  res.json({
-    result
-  });
+  res.send("Hello World");
 });
 
 
