@@ -21,6 +21,18 @@ router.get("/sum/:number1/:number2", (req, res) => {
     result: result,
   }); 
 });
+router.get("/hello",(req, res){res})
+
+
+
+router.get("/hello", (req, res) => {
+  const result = "Hello World"
+  res.json({
+    status: "success",
+    result: result,
+  });
+});
+
 
 router.post("/favNumber", (req, res) => {
   const {number} = req.body;
