@@ -21,8 +21,6 @@ router.get("/sum/:number1/:number2", (req, res) => {
     result: result,
   }); 
 });
-router.get("/hello",(req, res){res})
-
 
 
 router.get("/hello", (req, res) => {
