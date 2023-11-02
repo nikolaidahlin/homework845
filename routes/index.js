@@ -22,6 +22,12 @@ router.get("/sum/:number1/:number2", (req, res) => {
   }); 
 });
 
+
+router.get("/hello", (req, res) => {
+  res.send("Hello World");
+});
+
+
 router.post("/favNumber", (req, res) => {
   const {number} = req.body;
   if(number == null ) {
